@@ -1,0 +1,19 @@
+cd ~
+mkdir tools
+git clone https://github.com/msalvaris/gpu_monitor.git ~/tools/gpu_monitor
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod u+x /usr/local/bin/docker-compose
+pip install -e ~/tools/gpu_monitor
+sudo groupadd docker
+sudo usermod -aG docker $USER
+cd ~/tools/gpu_monitor/scripts
+mv example.env .env
+sudo mkdir /tmp/grafana
+sudo mkdir /tmp/influxdb
+make run
+cd ~
+nohup gpumon localhost admin password gpudb --series_name=gpuseries&
+
+
+
+GPU Monitor should be running on port 3000, make sure you are tunneling it, go to http://localhost:3000/login use admin / password as details 
