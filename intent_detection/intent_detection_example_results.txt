@@ -1,0 +1,38 @@
+    Epoch 19. Current Loss: 0.00250.
+    Intent train accuracy: 0.993, Slots train accuracy: 0.995,
+    Intent valid accuracy: 0.974, Slot val accuracy: 0.974
+    Improvement observed
+    Model to use: ./model_0019.params
+                                    |  Model  |  SNIPS  |  Diff   |
+    --------------------------------+---------+---------+---------+
+    PlayMusic                       |  +0.960 |  +0.980 |  -0.020 |
+        album                       |  +0.333 |  +0.720 |  -0.387 |
+        sort                        |  +0.882 |  +0.867 |  +0.016 |
+        playlist                    |  +0.462 |  +0.588 |  -0.127 |
+        service                     |  +0.974 |  +0.960 |  +0.014 |
+        artist                      |  +0.853 |  +0.894 |  -0.042 |
+        track                       |  +0.333 |  +0.462 |  -0.128 |
+        music_item                  |  +0.967 |  +0.969 |  -0.002 |
+        year                        |  +0.960 |  +1.000 |  -0.040 |
+        genre                       |  +0.333 |  +0.500 |  -0.167 |
+    RateBook                        |  +1.000 |  +1.000 |  +0.000 |
+        object_part_of_series_type  |  +1.000 |  +0.929 |  +0.071 |
+        rating_value                |  +1.000 |  +0.995 |  +0.005 |
+        object_type                 |  +1.000 |  +1.000 |  +0.000 |
+        object_select               |  +0.938 |  +0.947 |  -0.010 |
+        object_name                 |  +0.939 |  +0.950 |  -0.012 |
+        rating_unit                 |  +1.000 |  +0.992 |  +0.008 |
+        best_rating                 |  +1.000 |  +1.000 |  +0.000 |
+    SearchCreativeWork              |  +1.000 |  +1.000 |  +0.000 |
+        object_name                 |  +0.876 |  +0.925 |  -0.049 |
+        object_type                 |  +0.979 |  +0.965 |  +0.014 |
+    BookRestaurant                  |  +0.990 |  +1.000 |  -0.010 |
+        sort                        |  +1.000 |  +0.889 |  +0.111 |
+        city                        |  +0.690 |  +0.912 |  -0.222 |
+        spatial_relation            |  +0.947 |  +0.973 |  -0.026 |
+        facility                    |  +1.000 |  +1.000 |  +0.000 |
+        country                     |  +0.850 |  +0.919 |  -0.069 |
+        party_size_description      |  +0.923 |  +1.000 |  -0.077 |
+        restaurant_type             |  +0.935 |  +0.944 |  -0.009 |
+        cuisine                     |  +0.900 |  +0.818 |  +0.082 |
+        state                       |  +0.920 |  +0.980 |  -0.060 |
