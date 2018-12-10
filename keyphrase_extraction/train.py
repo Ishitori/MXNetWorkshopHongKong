@@ -36,7 +36,7 @@ from data_transformer import DataTransformer
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--gpu', type=int, default=7, help='Index of GPU to use')
+    parser.add_argument('--gpu', type=int, default=None, help='Index of GPU to use')
     parser.add_argument('--embedding_dim', type=int, default=100, help='glove embedding dim')
     parser.add_argument('--logging_path', default="./log_glove_100.txt",
                         help='logging file path')
