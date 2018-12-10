@@ -12,8 +12,7 @@ Areas of focus:
 Since this repository contains submodules use
 the following command to clone:
 
-`git clone --recurse-submodules
-https://github.com/cyrusmvahid/GluonBootcamp.git`
+`git clone --recurse-submodules https://github.com/Ishitori/MXNetWorkshopHongKong.git`
 
 ## Day 1: 10th December 2018
 
