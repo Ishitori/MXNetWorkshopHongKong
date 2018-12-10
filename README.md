@@ -7,6 +7,14 @@ Areas of focus:
 * Recommender Systems
 * Reinforcement Learning
 
+## Setup
+
+Since this repository contains submodules use
+the following command to clone:
+
+`git clone --recurse-submodules
+https://github.com/cyrusmvahid/GluonBootcamp.git`
+
 ## Day 1: 10th December 2018
 
 Area of focus: Get introduced to MXNet (Gluon API) on AWS using Amazon SageMaker.
