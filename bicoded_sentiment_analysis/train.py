@@ -34,10 +34,10 @@ from mxnet import autograd, gluon
 from mxnet.gluon.data import DataLoader
 from mxnet.gluon.loss import SigmoidBinaryCrossEntropyLoss
 
-from sentiment_analysis.data_transformer import DataTransformer
-from sentiment_analysis.dataset import NLPCCDataset
-from sentiment_analysis.model import SentimentNet
-from sentiment_analysis.result_generator import ResultFileGenerator
+from data_transformer import DataTransformer
+from dataset import NLPCCDataset
+from model import SentimentNet
+from result_generator import ResultFileGenerator
 
 
 def transform_segment(transformer, segment, options):
@@ -62,7 +62,7 @@ def get_model(word_vocab, char_vocab, options):
     model = SentimentNet(word_vocab, sentiments=options.sentiments)
     model.initialize(mx.init.Xavier(), ctx=context)
 
-    en_embedding = gluonnlp.embedding.FastText.from_file('./data/cc.en.300.aligned.to.zh.vec.npz')
+    en_embedding = gluonnlp.embedding.FastText.from_file('./cc.en.300.aligned.to.zh.vec.npz')
     # en_embedding = gluonnlp.embedding.create('fasttext', source='cc.en.300')
     zh_embedding = gluonnlp.embedding.create('fasttext', source='cc.zh.300')
     en_embedding._unknown_lookup = zh_embedding

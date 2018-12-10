@@ -25,7 +25,7 @@ from mxnet import nd
 
 from gluonnlp import Vocab, data
 
-from sentiment_analysis.dataset import NLPCCDataset
+from dataset import NLPCCDataset
 
 
 class DataTransformer:
