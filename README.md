@@ -56,8 +56,8 @@ Presenters: Cyrus, Thom and Sergey
 |---	|---	|---	|---	|
 |Survey of Recomender Systems	|	|60	|Cyrus	|
 |Profiling MXNet	|Analysis of runtime code to identify performance bottlenecks	|30	|Thom	|
-|Implmentation of MLP on Movie Lens	|	|30	|Cyrus	|
-|MXNet Performance Tricks	|Useful tips for maximizing perfomance of MXNet	|60	|Sergey	|
+|Implementation of MLP on Movie Lens	|	|30	|Cyrus	|
+|MXNet Performance Tricks	|Useful tips for maximizing performance of MXNet	|60	|Sergey	|
 |DSSM Theory	|	|30	|Cyrus	|
 |LR Schedules	|Using custom learning rate schdules	|45	|Thom	|
 |DSSM Implementation	|	|60	|Cyrus	|

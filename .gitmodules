@@ -1,3 +1,6 @@
 [submodule "aim-418-labs"]
 	path = aim-418-labs
 	url = https://github.com/cyrusmvahid/aim-418-labs.git
+[submodule "gluon-recommendations"]
+	path = gluon-recommendations
+	url = https://github.com/cyrusmvahid/gluon-recommendations.git
