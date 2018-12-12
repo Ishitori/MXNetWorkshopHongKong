@@ -1,0 +1,24 @@
+1) No container:
+
+Run server:
+mxnet-model-server --start --models squeezenet=https://s3.amazonaws.com/model-server/model_archive_1.0/squeezenet_v1.1.mar
+
+Predict:
+curl -X POST http://127.0.0.1:8080/predictions/squeezenet -T kitten.jpg
+
+
+
+2) Model archiver
+model-archiver --model-name squeezenet_v1.1 --model-path squeezenet --handler mxnet_vision_service:handle --force
+mxnet-model-server --model-store /home/ubuntu/ --models squeezenet=squeezenet_v1.1.mar
+
+Predict:
+curl -X POST http://127.0.0.1:8080/predictions/squeezenet -T kitten.jpg
+
+
+
+3) Docker
+docker run -itd --name mms -p 80:8080 -p 8081:8081 awsdeeplearningteam/mxnet-model-server:1.0.0-mxnet-cpu mxnet-model-server --start --models squeezenet=https://s3.amazonaws.com/model-server/models/squeezenet_v1.1/squeezenet_v1.1.model
+
+Predict:
+curl -X POST http://127.0.0.1:80/predictions/squeezenet -T kitten.jpg
