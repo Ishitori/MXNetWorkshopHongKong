@@ -91,5 +91,4 @@ Presenters: Thom, Sergey & Steve
 |AWS Elastic Inference	|	|30	|Steve	|
 |RL Introduction	|An introduction to RL theory, and SageMaker RL (frameworks)	|45	|Thom	|
 |RL DQN	|An introduction to DQN with SageMaker RL Coach demo.	|45	|Thom	|
-|Keras-MXNet 2	|Quick overview of Keras MXNet support	|30	|Sergey	|
 |RL PPO	|An introduction to PPO with SageMaker RL Coach demo.	|45	|Thom	|
