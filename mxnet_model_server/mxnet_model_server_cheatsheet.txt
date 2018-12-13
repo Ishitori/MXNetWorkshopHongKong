@@ -9,6 +9,7 @@ curl -X POST http://127.0.0.1:8080/predictions/squeezenet -T kitten.jpg
 
 
 2) Model archiver
+cp -r mxnet-model-server/examples/model_service_template/* squeezenet/
 model-archiver --model-name squeezenet_v1.1 --model-path squeezenet --handler mxnet_vision_service:handle --force
 mxnet-model-server --model-store /home/ubuntu/ --models squeezenet=squeezenet_v1.1.mar
 
